@@ -1,0 +1,175 @@
+.login{
+    margin-top: 10px;
+}
+
+.oferta1{
+    padding: 0 10px;
+}
+
+.cantidad{
+    font-size: 30px;
+    text-align: center;
+   float: right;
+}
+
+.dis{
+    float: right;
+    font-size: 12px;
+}
+
+.dis1{
+    margin-right: 10px;
+}
+
+.dis2{
+    margin-right: 5px;
+}
+
+.ca1{
+    margin-right: 10px;
+    background-color: #ff7900ff;
+    color: whitesmoke;
+}
+
+.ca2{
+    margin-right: 10px;
+    background-color: #2d3975ff;
+    color: whitesmoke;
+}
+
+.cantidad{
+    width: 50px;
+    height: 45px;
+    border-radius: 8px;
+    border: solid 1px;
+}
+
+
+.primary-button{
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #ff7900;
+    color: #ff7900;
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.secondary-button{
+    background-color: #ff7900;
+    border-radius: 8px;
+    border: none;
+    color: whitesmoke;
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.secondary2-button{
+    background-color: #ff7900;
+    border-radius: 8px;
+    border: none;
+    color: whitesmoke;
+    width: 150px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.disponibles1{
+    margin-left: 10px;
+}
+
+.btnpedir{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.price{
+    float: right;
+}
+
+.price1{
+    float: right;
+}
+
+.ngr{
+    font-weight: bold;
+}
+
+.scroll{
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+.qr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.qr1{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    color: #2d3975;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+}
+
+.label1{
+    font-size: medium;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.input{
+    width: 170px;
+}
+
+.color{
+    color: #2d3975;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 300px;
+}
+
+.desc{
+    width: 275px;
+}
+
+.resumen{
+    width: 290px;
+}
+
+@media (max-width: 365px){
+    .conten{
+        width: 290px
+    };
+}
+
+@media (max-width: 320px){
+    .conten{
+        width: 250px
+    };
+}

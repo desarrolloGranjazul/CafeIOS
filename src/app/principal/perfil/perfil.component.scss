@@ -1,0 +1,182 @@
+.login{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+    
+    
+}
+
+.titles1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.titles{
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.form-container{
+    margin-top: 0px;
+    width: 700px;
+    grid-template-rows: auto 1fr auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+}
+
+
+.logo{
+    width: 200px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form a{
+    color: #ff7900;
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+}
+
+.label{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 10px;
+    width: 330px;
+}
+
+.input-email{
+    margin-bottom: 15px;
+}
+
+
+
+.usuario{
+    margin-left: 190px;
+}
+
+.rol{
+    margin-left: 200px;
+}
+
+.confirmar{
+    margin-left: 160px;
+}
+
+.roles{
+    margin-left: 120px;
+}
+
+.pass{
+    margin-left: 20px;
+}
+
+.user{
+    margin-left: 20px;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+
+.secondary-button{
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #ff7900;
+    color: #ff7900;
+    width: 200px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.form1{
+    display: none;
+}
+
+.secondary-button2{
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #ff7900;
+    color: #ff7900;
+    width: 200px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 380px){
+    .logo{
+        display: none;
+    }
+    .signup-button{
+        margin-top: 3rem;
+    }
+}
+    
+@media (max-width: 800px){
+    .form{
+        display: none;
+    }
+    .form1{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container{
+        width: 300px;
+    }
+    .secondary-button{
+        margin-left: 0px;
+    }
+}
+
+.primary-button{
+    background-color: #ff7900;
+    border-radius: 8px;
+    border: none;
+    color: whitesmoke;
+    width: 200px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.scroll{
+    overflow-y: scroll;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+<div>
+  <br>
+  <div class="btnd">
+    <button class="btnprimary" (click)="iniciarActualizacion()"  *ngIf="this.api.intervalTurno$ === 0">Actualización automatica</button>
+  </div>
+  <br>
+  <div class="login">
+    <br><br>
+    
+    <div class="cuadro">
+      <label for="" class="turnoa">Personas en espera</label>
+      <hr>
+      <label for="" class="turnoa1">{{personasActuales}}</label>
+    </div>
+    <br>
+   
+    <br>
+  </div>
+ <div class="pasar">
+  <p *ngIf="personasActuales<=0" class="please">Por favor pasar a recoger su pedido</p>
+ </div>
+
+</div>

@@ -1,0 +1,19 @@
+
+  <div class="login">
+        <div class="form-container">
+            <form (ngSubmit)="guardar()" [formGroup]="formulario" class="form">
+                <label for="email" class="label" name="">Usuario</label>
+                <input formControlName="usuario" type="text"  placeholder="usuario" class="input input-email border">
+
+                <label for="password" class="label">Password</label>
+                <input formControlName="password" type="password"  placeholder="************" class="input input-password border">
+                
+                <button type="submit" value="Iniciar Sesión" class="primary-button login-button">Ingresar</button>
+            </form>
+          
+            <form  class="form">
+                <a  class="passa" routerLink="/validarcorreo">Olvide mi contraseña</a>
+            </form>
+           <button type="button" class="secondary-button signup-button" routerLink="/registro">Registrarse</button>
+        </div>
+    </div>

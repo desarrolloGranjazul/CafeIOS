@@ -1,0 +1,29 @@
+<div class="oferta">
+  <div class="oferta1">
+      <label class="title tl1">{{reserva.articulo}}</label>
+      <div class="centrartl">
+        <label for="" class="conten1 tl2">{{reserva.descripcion}}</label>
+      </div>
+      <div class="centrar mtop">
+      <label for=""class="conten colorf">Fin Reservas:</label>
+      <label for=""class="conten fin colorf">{{reserva.fecha_fin}}</label><br>
+      </div>
+      <div class="centrar">
+      <label for=""class="conten colorf">Fecha Entrega:</label>
+      <label for=""class="conten entrega colorf">{{reserva.fecha_entrega}}</label><br>
+      </div>
+      <div class="centrar">
+      <label for=""class="conten negrita">Disponibles:</label>
+      <label for=""class="conten negrita disponibles">{{reserva.cantidad_disponible}}</label>
+      <label for=""class="conten negrita precio">Precio:</label>
+      <label for=""class="conten negrita cprecio">Q. {{reserva.precio}}</label><br>  
+      </div>     
+      <label for="" class="mis">Mis Reservas</label>
+      <div class="centrar">
+        <button class="primary-button" (click)="procesarEliminar()">Eliminar</button>
+      <input type="number" class="cantidad" [(ngModel)]="reserva.cantidad_usuario_reserva" name="cantidad_usuario_reserva">
+      <button class="secondary-button" (click)="procesarRserva()">Reservar</button>
+      </div>
+      <br>
+  </div><hr>
+</div>

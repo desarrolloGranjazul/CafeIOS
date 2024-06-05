@@ -1,0 +1,28 @@
+.title{
+    font-size: 15px;
+    float: right;
+}
+
+.carrito{
+    height: 15px;
+}
+
+.carrito:hover{
+    cursor: pointer;
+}
+
+.menus{
+    margin-left: 10px;
+}
+
+.scroll{
+    overflow-y: scroll;
+}
+
+.new-background-color{
+    --background: #2d3a75;
+} 
+
+.title, .me{
+    color: whitesmoke;
+}

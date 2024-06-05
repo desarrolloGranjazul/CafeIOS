@@ -1,0 +1,20 @@
+<div class="login">
+  <div class="content">
+    <br>
+    <div class="title">
+      <label for="">Bienvenido(a)</label>
+    </div><br>
+    <div class="head">
+      <label for="">{{persona.nombre}}</label>
+    </div><br>
+    <div class="head1">
+      <label for="">Su saldo actual es de Q. {{persona.saldo||0}}</label>
+    </div><br><br>
+    <div class="img">
+      <button routerLink="/principal/reservar" class="primary-button">Ver ofertas del día</button>
+    </div>
+     <div class="img">
+      <button (click)="openManualUsuario()" class="secondary-button">Manual de Usuario</button>
+    </div>
+  </div>
+</div>

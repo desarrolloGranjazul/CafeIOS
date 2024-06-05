@@ -1,0 +1,18 @@
+<div class="scroll">
+<div class="login">
+  <label for="" class="menu">Ofertas del Día</label>
+  <div class="buscador">
+    <label class="label1" for="">Seleccionar Localidad</label>
+    <form [formGroup]="formularioLocalidad" class="d-flex">
+      <select formControlName="idlocalidad" class="input input-password border">
+            <option *ngFor="let item of localidades"  [ngValue]="item.idlocalidad">{{item.localidad}}</option>
+        </select>
+      </form>
+  </div>
+  <hr>
+ 
+  <app-tarjetareserva *ngFor="let registro of reservas" [reserva]="registro" (eliminar)="eliminar($event)" (reservar)="reservar($event)"></app-tarjetareserva>
+
+
+</div>
+</div>

@@ -1,0 +1,31 @@
+  <ion-header [translucent]="true">
+    <ion-toolbar class="new-background-color">
+      <ion-buttons class="me" slot="start">
+        <ion-menu-button  id="main-content"></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="title">Salir  <img [src]="logoutImagen |img" alt="" class="carrito" (click)="logout()"> </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-content>
+      <ion-router-outlet></ion-router-outlet>
+    </ion-content>  
+  
+    <ion-menu  contentId="main-content" type="overlay">
+        <ion-content  >
+          <ion-list  id="inbox-list">
+            <ion-list-header>OPCIONES</ion-list-header>  
+            <ion-menu-toggle auto-hide="false">
+              <ion-item (click)="navegar(urlInicio)" lines="true" detail="false"><ion-icon name="home"></ion-icon> <ion-label class="menus">Inicio</ion-label> </ion-item>
+              <ion-item (click)="navegar(urlReservar)" lines="true" detail="false"><ion-icon name="cart"></ion-icon> <ion-label class="menus">Reservar</ion-label> </ion-item>
+              <ion-item (click)="navegar(urlPedir)"  lines="true" detail="false"><ion-icon name="cash"></ion-icon> <ion-label class="menus">Pedir</ion-label> </ion-item>
+              <ion-item (click)="navegar(urlMiTurno)" lines="true" detail="false"><ion-icon name="megaphone"></ion-icon> <ion-label class="menus">Mi Turno</ion-label> </ion-item>
+              <ion-item (click)="navegar(urlMiDetalle)" lines="true" detail="false"><ion-icon name="create"></ion-icon> <ion-label class="menus">Mis Detalles</ion-label> </ion-item>
+              <ion-item (click)="navegar(urlPerfil)" lines="true" detail="false"><ion-icon name="person"></ion-icon> <ion-label class="menus">Perfil</ion-label> </ion-item>
+              <ion-item lines="true" detail="false" (click)="logout()"><ion-icon name="log-out"></ion-icon> <ion-label class="menus">Cerrar Sesión</ion-label> </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+
+        </ion-content>
+      </ion-menu>
+  

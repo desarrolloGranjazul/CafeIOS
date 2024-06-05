@@ -1,0 +1,48 @@
+
+  <div class="login scroll">
+    <div class="titles1">
+      <label for="" class="titles">Perfil</label>
+    </div>
+  
+    
+    <div class="form-container">
+      
+        <form (ngSubmit)="guardar()" [formGroup]="formulario" class="form1">
+            <label for="dpi" class="label">DPI</label>
+            <input type="text" formControlName="dpi"  class="input input-email border">
+            <label for="Nombre" class="label">Nombre</label>
+            <input type="text" formControlName="nombre"  class="input input-email border">
+            <small *ngIf="fs.validar('nombre')" class="text-danger">Debe ingresar minimo 5 caracteres</small><br>
+            <label for="email" class="label">Correo</label>
+            <input type="text" formControlName="correo"  class="input input-email border">
+            <label for="depto" class="label">Usuario</label>
+            <input type="text" formControlName="usuario"  class="input input-email border">
+            <label for="depto" class="label">Departamento Interno</label>
+            <input type="text" formControlName="departamento"  class="input input-email border">
+            <label for="depto" class="label">Código SAP</label>
+            <input type="text" formControlName="codigo_sap"  class="input input-email border">
+            <div class="centrar">
+              <button type="submit" class="secondary-button signup-button">Guardar</button>
+            </div>
+        </form>
+        <form (ngSubmit)="guardar()" [formGroup]="formulario" class="form">
+          <label for="dpi" class="label">DPI</label>
+          <input type="text" formControlName="dpi"  class="input input-email border">
+          <label for="Nombre" class="label">Nombre</label>
+          <input type="text" formControlName="nombre"  class="input input-email border">
+          <small *ngIf="fs.validar('nombre')" class="text-danger">Debe ingresar minimo 5 caracteres</small><br>
+          <label for="email" class="label">Correo</label>
+          <input type="text" formControlName="correo"  class="input input-email border">
+          <label for="depto" class="label">Usuario</label>
+          <input type="text" formControlName="usuario"  class="input input-email border">
+          <label for="depto" class="label">Departamento Interno</label>
+          <input type="text" formControlName="departamento"  class="input input-email border">
+          <label for="depto" class="label">Código SAP</label>
+          <input type="text" formControlName="codigo_sap"  class="input input-email border">
+          <div class="centrar">
+            <button type="submit" class="secondary-button signup-button">Guardar</button>
+          </div>
+      </form>
+  
+    </div>
+  </div>

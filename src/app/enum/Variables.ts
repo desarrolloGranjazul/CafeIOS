@@ -1,0 +1,4 @@
+export enum Variables {
+    TOKEN_LOCALSTORAGE = 'TOKEN_CAFEAPP_GRANJAZUL',
+    PAYLOAD = 'PERSONA'
+  }

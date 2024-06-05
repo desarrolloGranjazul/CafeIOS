@@ -1,0 +1,67 @@
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.cuadro{
+    border: solid 1px #2d3975;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cuadro1{
+    border: solid 1px #2d3975;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.turnoa, .miturno{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2d3975;
+}
+
+.turnoa1, .miturno1{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: #2d3975;
+}
+
+.btnprimary{
+    background-color: #2d3975;
+    border-radius: 8px;
+    border: none;
+    color: whitesmoke;
+    width: 150px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.btnd{
+    display: flex;
+    justify-content: center;
+}
+
+.neg{
+    font-weight: bolder;
+}
+
+.please{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2d3975;
+    margin-left: 10px;
+}
+
+.pasar{
+    display: flex;
+    justify-content: center;
+}

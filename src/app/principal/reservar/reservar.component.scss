@@ -1,0 +1,32 @@
+.login{
+    margin-top: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.scroll{
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+}
+
+.label1{
+    margin-top: 20px;
+    font-size: medium;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.input{
+    width: 170px;
+    margin-top: 20px;
+}

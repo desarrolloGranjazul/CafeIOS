@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+    border-bottom: 1px solid var(--very-light-pink);
+    background-color: #2d3975;
+}
+
+.menu{
+    display: none;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navbar-left ul,
+.navbar-right ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-left{
+    display: flex;
+}
+
+.navbar-left ul{
+    display: flex;
+    margin-left: 12px;
+}
+
+
+.navbar-left ul li a,
+.navbar-right ul div li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #2d3975ff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul div li a:hover{
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.carrito{
+    height: 25px;
+}
+
+.carrito:hover{
+    cursor: pointer;
+}
+
+.letter{
+    color: whitesmoke;
+}
+
+.letter:hover{
+    cursor: pointer;
+}
+
+.navbar-email{
+    color: whitesmoke;
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+
+.navbar-shopping-cart{
+    position: relative;
+}
+
+.navbar-shopping-cart div{
+    width: 16px;
+    height: 18px;
+    background-color: skyblue;
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 450px){
+    .menu{
+        display: block;
+        height: 30px;
+        margin-top: 15px;
+    }
+    .navbar-left ul {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1165px) {
+    .navbar-left{
+        display: none;
+    }
+}
+
+.navbar-display li a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #2d3975;
+    border: 1px solid #2d3975ff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navbar-display li a:hover{
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.dropdown{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar-display ul{
+    background-color: #2d3975;
+}

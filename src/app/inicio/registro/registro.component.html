@@ -1,0 +1,92 @@
+<div class="login scroll">
+  <div class="form-container" *ngIf="!terminos">
+      <form (ngSubmit)="validarTerminos()" [formGroup]="formulario" class="form1">
+          <label for="email" class="label">Registro de Usuarios</label>
+          <br>
+          <label for="dpi" class="label">DPI</label>
+          <input type="text" formControlName="dpi" placeholder="dpi" class="input input-email border">
+          <label for="Nombre" class="label">Nombre</label>
+          <input type="text" formControlName="nombre" placeholder="nombre y apellido" class="input input-email border">
+          <small *ngIf="fs.validar('nombre')" class="text-danger">Debe ingresar minimo 5 caracteres</small><br>
+          <label for="email" class="label">Correo</label>
+          <input type="email" formControlName="correo" placeholder="example@granajazul.gt" class="input input-email border">
+          <label for="depto" class="label">Usuario</label>
+          <input type="text" formControlName="usuario" placeholder="usuario" class="input input-email border">
+          <label for="password" class="label">Contraseña</label>
+          <input type="password" formControlName="password" placeholder="***********" class="input input-password border">
+          <label for="password" class="label">Confirmar</label>
+          <input type="password" formControlName="password2" placeholder="***********" class="input input-password border">
+          <label for="depto" class="label">Departamento Interno</label>
+          <input type="text" formControlName="departamento" placeholder="informtica, gth" class="input input-email border">
+          <label for="depto" class="label">Código SAP</label>
+          <input type="text" formControlName="codigo_sap" placeholder="código de cliente" class="input input-email border">
+          <div class="botones">
+              <button type="button" routerLink="/login" class="secondary-button signup-button">Iniciar sesión</button>
+              <button type="submit" class="primary-button signup-button">Registrarse</button>
+          </div>
+      </form>
+
+      <form (ngSubmit)="validarTerminos()" [formGroup]="formulario" class="form">
+        <label for="email" class="label">Registro de Usuarios</label>
+        <br>
+        <label for="dpi" class="label">DPI</label>
+        <input type="text" formControlName="dpi" placeholder="dpi" class="input input-email border">
+        <label for="Nombre" class="label">Nombre</label>
+        <input type="text" formControlName="nombre" placeholder="nombre y apellido" class="input input-email border">
+        <small *ngIf="fs.validar('nombre')" class="text-danger">Debe ingresar minimo 5 caracteres</small><br>
+        <label for="email" class="label">Correo</label>
+        <input type="email" formControlName="correo" placeholder="example@granajazul.gt" class="input input-email border">
+        <label for="depto" class="label">Usuario</label>
+        <input type="text" formControlName="usuario" placeholder="usuario" class="input input-email border">
+        <label for="password" class="label">Contraseña</label>
+        <input type="password" formControlName="password" placeholder="***********" class="input input-password border">
+        <label for="password" class="label">Confirmar</label>
+        <input type="password" formControlName="password2" placeholder="***********" class="input input-password border">
+        <label for="depto" class="label">Departamento Interno</label>
+        <input type="text" formControlName="departamento" placeholder="informtica, gth" class="input input-email border">
+        <label for="depto" class="label">Código SAP</label>
+        <input type="text" formControlName="codigo_sap" placeholder="código de cliente" class="input input-email border">
+        <div class="botones">
+            <button type="button" routerLink="/login" class="secondary-button signup-button">Iniciar sesión</button>
+            <button type="submit" class="primary-button signup-button">Registrarse</button>
+        </div>
+    </form>
+
+  </div>
+
+  <div class="form-container" *ngIf="terminos">
+    <form class="form1"  (ngSubmit)="registrarse()">
+        <label  class="label">Términos y Condiciones</label>
+        <br>
+        <label class="label">Al adquirir cualquier PRODUCTO de nuestra APP y/o utilizar o acceder a la información desplegada en el mismo, el USUARIO acepta haber estudiado y entendido todos los términos y condiciones. </label>
+        <br><label class="label">1. En la aplicación solo se puede solicitar alimentos según los horarios ya establecidos, trabajaremos los alimentos según reservas, para reducción de mermas.</label>
+        <br><label class="label">2. Si las personas no eliminan su reserva antes de las 10 am. del mismo día, se les cobrará de igual manera lo solicitado, dejando los alimentos en bandejas desechables para que se los puedan llevar.</label>
+        <br><label class="label">3. Asignación de saldo: Se recibira unicamente dinero en efectivo para recargar saldo en la aplicación, la recarga de saldo se puede realizar en el área de caja los días lunes y miércoles en horario de 11:00 AM a 12:00 PM</label>
+          <br>  <div class="centrar">
+                <div>
+                    <button type="button" class="secondary-button signup-button" (click)="validarTerminos()" >Rechazar Terminos</button>
+                </div>
+                <div>
+                    <button type="submit" class="third-button signup-button">Aceptar Terminos</button>
+                </div>
+            </div>
+    </form>  
+    <form class="form"  (ngSubmit)="registrarse()">
+        <label  class="label">Términos y Condiciones</label>
+        <br>
+        <label class="label">Al adquirir cualquier PRODUCTO de nuestra APP y/o utilizar o acceder a la información desplegada en el mismo, el USUARIO acepta haber estudiado y entendido todos los términos y condiciones. </label>
+        <br><label class="label">1. En la aplicación solo se puede solicitar alimentos según los horarios ya establecidos, trabajaremos los alimentos según reservas, para reducción de mermas.</label>
+        <br><label class="label">2. Si las personas no eliminan su reserva antes de las 10 am. del mismo día, se les cobrará de igual manera lo solicitado, dejando los alimentos en bandejas desechables para que se los puedan llevar.</label>
+        <br><label class="label">3. Asignación de saldo: Se recibira unicamente dinero en efectivo para recargar saldo en la aplicación, la recarga de saldo se puede realizar en el área de caja los días lunes y miércoles en horario de 11:00 AM a 12:00 PM</label>
+          <br>  <div class="centrar">
+                <div>
+                    <button type="button" class="secondary-button signup-button" (click)="validarTerminos()" >Rechazar Terminos</button>
+                </div>
+                <div>
+                    <button type="submit" class="third-button signup-button">Aceptar Terminos</button>
+                </div>
+            </div>
+    </form>  
+
+</div>
+</div>

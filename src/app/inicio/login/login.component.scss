@@ -1,0 +1,91 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 30px;
+    justify-self: center;
+    display: block;
+    margin-top: 80px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form a{
+    color: #0043af;
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+}
+
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: solid 1px #d51c29;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.input-email{
+    margin-bottom: 22px;
+}
+
+.primary-button{
+    background-color: #0043af;
+    border-radius: 8px;
+    border: none;
+    color: whitesmoke;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.secondary-button{
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #0043af;
+    color: #0043af;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 380px){
+    .logo{
+        display: none;
+    }
+    .signup-button{
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,16 @@
+<div class="login">
+        
+  <div class="form-container">
+
+      <h1 class="title">Verificar cuenta</h1>
+      <p class="subtitle">Ingrese su correo para encontrar su cuenta</p>
+
+      <form    (ngSubmit)="guardar()" [formGroup]="formulario"  class="form">
+          <label for="password" class="label">Correo</label>
+          <input type="email" formControlName = "correo" name="correo" placeholder="correo electronico" class="input input-password border">
+      </form>
+      <form class="form">
+          <button type="button" (click)="guardar()"  class="primary-button login-button">CONFIRMAR</button>
+      </form>
+  </div>
+</div>

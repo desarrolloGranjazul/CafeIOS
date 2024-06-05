@@ -1,0 +1,48 @@
+<div class="scroll">
+<div class="login">
+  <div class="titles1">
+    <label for="" class="titles">Mi Detalle</label>    
+  </div>
+    
+  
+  
+  <div class="buscador"><br>
+  <form [formGroup]="formularioAuxiliar" class="d-flex" >
+        <div>
+          <label class="label" for="">Fecha Inicio</label>
+          <input class=" ill input-password border" formControlName="fechaInicio" type="date">
+        </div>
+        
+        <div>
+          <label class="label" for="">Fecha Fin</label>
+          <input class="  ill input-password   border" formControlName="fechaFin" type="date">
+        </div>
+      </form>
+  </div>
+  
+      <!-- Tabla    -->
+      <div class="table-localidad">
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Fecha</th>
+                  <th scope="col">Saldo Anterior</th>
+                  <th scope="col">Monto Transacción</th>
+                  <th scope="col">Saldo Final</th>
+                  <th scope="col">Observacion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let registro of movimientocajas">
+                  <td>{{registro.fecha_registro |date :"dd-MM-yyyy"}}</td>
+                  <td>Q. {{registro.saldo_anterior_usuario |number}}</td>
+                  <td>Q. {{registro.monto_usuario |number}}</td>
+                  <td>Q. {{registro.saldo_final_usuario |number}}</td>
+                  <td>{{registro.observacion}}</td>
+                </tr>              
+              </tbody>
+            </table>
+        </div>
+</div>
+ 
+</div>

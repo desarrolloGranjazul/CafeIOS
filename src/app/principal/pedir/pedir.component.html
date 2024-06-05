@@ -1,0 +1,78 @@
+<div class="scroll">
+  <div class="login">
+    <div class="buscador">
+      <label class="label1" for="">Seleccionar Localidad</label>
+      <form [formGroup]="formularioLocalidad" class="d-flex">
+        <select formControlName="idlocalidad" class="input input-password border">
+          <option *ngFor="let item of localidades" [ngValue]="item.idlocalidad">{{item.localidad}}</option>
+        </select>
+      </form>
+    </div><br>
+
+    <label for="" class="menu" *ngIf="this.pedidosActuales.length > 0">Pedido Actual</label>
+    <hr *ngIf="this.pedidosActuales.length > 0">
+    <div class="oferta" *ngIf="this.pedidosActuales.length > 0">
+      <div class="oferta1">
+        <label for="" class="price ngr">Sub-total</label>
+        <label for="" class="conten ngr">Descripcion</label><br>
+        <div *ngFor="let registro of pedidosActuales">
+          <label for="" class="content resumen">{{registro.oferta_venta}}</label>
+          <label for="" class="price1">Q. {{registro.subtotal}}</label>
+        </div>
+      </div>
+    </div>
+    <hr *ngIf="this.pedidosActuales.length > 0">
+    <div class="oferta" *ngIf="this.pedidosActuales.length > 0">
+      <div class="oferta1">
+        <label for="" class="price ngr">Q. {{totalDePedidos}}</label>
+        <label for="" class="conten ngr">Total:</label><br><br>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="this.pedidosActuales.length > 0">
+    <label for="" class="qr1">Codigo para solicitar pedido</label><br>
+    <ngx-qrcode class="qr1"
+      [width]="350"
+      [elementType]="elementType" 
+      [value]="valorQr">
+    </ngx-qrcode>
+  </div>
+
+  <div *ngIf="this.reservas.length > 0">
+    <hr>
+    <label for="" class="menu">Pedir: Mis reservas</label>
+    <hr>
+    <div class="oferta" *ngFor="let reserva of reservas">
+      <div class="oferta1">
+        <label for="" class="dis dis2">A pedir</label><br>
+        <input type="number" class="cantidad" [(ngModel)]="reserva.cantidad_pedir">
+        <label for="" class="conten color desc">{{reserva.descripcion}}</label><br>
+        <label for="" class="conten ngr">Precio: Q: {{reserva.precio}} - Mis Disponibles: {{reserva.cantidad_pendiente}}</label>
+      </div><hr>
+    </div>
+  </div>
+
+  <div *ngIf="this.categories.length > 0">
+    <label for="" class="menu">Ofertas por Categorías</label>
+    <hr>
+    <div *ngFor="let category of categories">
+      <button (click)="toggleCategory(category)" class="category-button">
+        {{category.name}} <span>{{category.isOpen ? '-' : '+'}}</span>
+      </button>
+      <div *ngIf="category.isOpen">
+        <div class="oferta" *ngFor="let pedido of ofertasAPedir" [ngClass]="{'hidden': pedido.idarticulo !== category.id}">
+          <div class="oferta1">
+            <input type="number" class="cantidad" [(ngModel)]="pedido.cantidad_pedir">
+            <label for="" class="conten color">{{pedido.descripcion}}</label><br>
+            <label for="" class="conten ngr">Precio Q. {{pedido.precio}} - Disponibles {{pedido.cantidad_disponible}}</label>
+          </div><hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btnpedir" *ngIf="this.ofertasAPedir.length > 0 || this.reservas.length > 0">
+    <button class="secondary-button" (click)="procesarPedidos()">Pedir</button>
+  </div>
+</div>
